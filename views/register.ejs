@@ -1,0 +1,57 @@
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			 // $.ajax({
+    //             url: "http://localhost:8000/Register",
+    //             data: JSON.stringify({
+    //                 address: "sample address",
+    //                 contact: "sample contact",
+    //                 plate: "sample plate number",
+    //                 bank: "sample bank"
+    //             }),
+    //             type: "post",
+    //             dataType: "json",
+    //             contentType: "application/json",
+    //         }).done(function (response) {
+    //             console.log(JSON.stringify(response));
+    //         }).fail(function (response) {
+    //             console.log(response);
+    //         });
+
+			$("form[name='form']").submit(function(e) {
+		        var formData = new FormData($(this)[0]);
+
+		        $.ajax({
+		            url: "http://localhost:8000/Register",
+		            type: "POST",
+		            data: formData,
+		            async: false,
+		            success: function (msg) {
+		                console.log(msg)
+		            },
+		            cache: false,
+		            contentType: false,
+		            processData: false
+		        });
+
+		        e.preventDefault();
+		    });
+
+
+     	});
+	</script>
+</head>
+<body>
+	<form name="form" enctype="multipart/form-data" action="Register" method="post">
+		<input type="text" name="email" value="tong@gmail.com" />
+		<input type="text" name="address" value="sample address" />
+		<input type="text" name="contact" value="sample contact" />
+		<input type="text" name="plate" value="sample plate" />
+		<input type="text" name="bank" value="sample bank" />
+		<input type="file" name="photo" />
+		<input type="submit" name="" value="submit" />
+	</form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'start' ]
+2 info using npm@3.3.6
+3 info using node@v5.0.0
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle runningman@0.0.0~prestart: runningman@0.0.0
+6 silly lifecycle runningman@0.0.0~prestart: no script for prestart, continuing
+7 info lifecycle runningman@0.0.0~start: runningman@0.0.0
+8 verbose lifecycle runningman@0.0.0~start: unsafe-perm in lifecycle true
+9 verbose lifecycle runningman@0.0.0~start: PATH: C:\Users\mgaudiario\AppData\Roaming\nvm\v5.0.0\node_modules\npm\bin\node-gyp-bin;C:\Users\mgaudiario\Dropbox\RunningMan-Admin\API\node_modules\.bin;C:\Users\mgaudiario\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\mgaudiario\bin;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio;C:\Program Files\Microsoft SQL Server\120\DTS\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn;C:\Program Files (x86)\Skype\Phone;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn;C:\Program Files\Microsoft SQL Server\100\Tools\Binn;C:\Program Files\Microsoft SQL Server\100\DTS\Binn;C:\Users\mgaudiario\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Users\mgaudiario\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\mgaudiario\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+10 verbose lifecycle runningman@0.0.0~start: CWD: C:\Users\mgaudiario\Dropbox\RunningMan-Admin\API
+11 silly lifecycle runningman@0.0.0~start: Args: [ '/d /s /c', 'node ./www' ]
+12 silly lifecycle runningman@0.0.0~start: Returned: code: 1  signal: null
+13 info lifecycle runningman@0.0.0~start: Failed to exec start script
+14 verbose stack Error: runningman@0.0.0 start: `node ./www`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (C:\Users\mgaudiario\AppData\Roaming\nvm\v5.0.0\node_modules\npm\lib\utils\lifecycle.js:233:16)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at EventEmitter.emit (events.js:172:7)
+14 verbose stack     at ChildProcess.<anonymous> (C:\Users\mgaudiario\AppData\Roaming\nvm\v5.0.0\node_modules\npm\lib\utils\spawn.js:24:14)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at ChildProcess.emit (events.js:172:7)
+14 verbose stack     at maybeClose (internal/child_process.js:818:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+15 verbose pkgid runningman@0.0.0
+16 verbose cwd C:\Users\mgaudiario\Dropbox\RunningMan-Admin\API
+17 error Windows_NT 10.0.14393
+18 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
+19 error node v5.0.0
+20 error npm  v3.3.6
+21 error code ELIFECYCLE
+22 error runningman@0.0.0 start: `node ./www`
+22 error Exit status 1
+23 error Failed at the runningman@0.0.0 start script 'node ./www'.
+23 error This is most likely a problem with the runningman package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     node ./www
+23 error You can get their info via:
+23 error     npm owner ls runningman
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]
